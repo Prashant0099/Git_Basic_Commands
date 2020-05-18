@@ -1,0 +1,82 @@
+Git commands
+//to know that this user commit the changes
+git --global user.name Prashant
+
+//to know that this usermail commit the changes
+git --global user.email Prashant@gmail.com
+
+//for initialization
+git init
+
+// to show hidden files in .git folder
+ls -lart 
+
+// to check the status in the .git folder
+git status
+
+//to check the status in short 
+git status -s (green shows staging area and red shows working area)
+
+//to add file in .git repo
+git add filename.txt
+
+//to add mulitple files at once
+git add -A
+
+//to commit the file 
+git commit
+
+//to commit the file without opening of vim editor 
+git commit -m "type your message here"
+
+//to move all files directly to commit area without staging area 
+git commit -a -m "type your message here"
+
+//to create a file using git Bash
+touch filename.txt
+
+//to bring the last commit or last save changes of single file  
+git checkout filename.txt
+
+//to bring the last commit or last save changes of mulitple file  
+git checkout -f
+
+//to see the logs of all commit 
+git log 
+
+// to see the log of commits of your choices 
+git log -p -3,2,1 etc
+
+//to see the difference between working area and staging area
+git diff
+
+//to see the difference between staging area and commit area
+git diff --staged
+
+// to delete the file from staging area but not from harddisk
+git rm --cached filename.txt
+
+// to delete file from harddisk as well as from staging area
+git rm fileName.Txt
+
+//to see the branches 
+git branch
+
+// to create the branches
+git branch branchName 
+
+// to swtich branches
+git checkout branchName 
+
+//to create branch and switch directly after creating
+git checkout -b branchName
+
+// to merge branches in Master(come in master branch first)
+git merge branchName
+
+// to push your branch or changes in gitHub(but first have to copy the )
+git push -u origin branchName
+
+
+
+
